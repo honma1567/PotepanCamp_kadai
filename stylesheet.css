@@ -1,0 +1,849 @@
+/*base*/
+
+
+span {
+    display: block;
+}
+
+html {
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+  color: #222;}
+  
+   @media screen and (max-width: 767px) {
+       html{
+    font-size: 15px;
+  }}
+
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 游ゴシック, YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+img {
+    border:0;
+    vertical-align: middle;
+
+}
+
+ul,ol{
+    list-style: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+/*site header*/
+
+
+.contents-tidy{
+    display: flex;
+    justify-content: space-between;
+}
+    
+.contents-tidy1{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.site-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+
+.site-header.-recruit {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: absolute;
+
+}
+
+
+@media screen and (max-width: 1080px){    
+     .site-header.-recuruit{
+         background-color: inherit;
+         position: absolute;}}
+    
+    
+
+@media screen and (max-width: 767px){
+    .site-header{
+    padding-top: 15px;
+    padding-bottom:  15px;
+}
+}
+
+
+@media screen and (max-width: 767px){
+    .site-header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .site-header {
+        background-color: #fff;
+        position: fixed;
+        z-index: 10;
+    }
+}
+
+.site-header {
+    width: 100%;
+    position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+    .header-width{
+        max-width: 100%;
+        margin: 0 20px;}}
+    
+.items {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.items:first-child{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+    
+    
+.header-width{
+    max-width: 100%;
+    margin: 0 36px 0 36px ;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .hedear-logo > .header-logo-sp{
+        display: inline-block;
+        width: auto;
+        height: 16px;
+    }
+}
+
+.header-logo > .header-logo-sp{
+    display: none;
+}
+
+li {
+    display: list-item;
+    
+}
+
+    
+.header-logo > .header-logo-pc{
+    width: auto;
+    height: 20px;
+}
+    
+
+
+/*top hero*/
+
+    .section-top-hero {
+        padding-top:190px;
+        padding-bottom: 28px;
+        background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero.png);
+        background-size: auto 100%;
+        background-position: right -20px;
+        background-repeat: no-repeat;
+    }
+    
+    @media screen and (max-width: 767px){
+.section-top-hero {
+    padding-top: 258px;
+    padding-bottom: 12px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero-sp.png);
+}
+}
+
+
+
+
+
+
+/*header-nav*/
+
+.nav-item{
+    margin-right: 45px
+}
+
+.nav-list{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+span:last-child{
+    font-size: 10px;
+}
+
+
+
+
+.header-nav-list.contents-tidy{
+    align-items:center;
+}
+
+
+
+
+.header-nav .header-nav-item {
+    display: block;
+}
+
+
+@media screen and (max-width: 1080px){
+    .nav-list{
+        display: none
+    }}
+
+
+
+@media screen and (max-width: 1080px){
+.header-button-outline {
+    margin-top: 20px;
+}}
+
+
+.nav-item:first-child {
+    font-family: 'Lato', sans-serif;
+}
+
+/*hamburger*/
+@media screen and (max-width: 1080px){
+.header-nav .header-nav-list {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform 0.5s;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-overflow-scrolling: touch;
+}}
+
+
+@media screen and (max-width: 767px) {
+.header-nav-list {
+    top: 52px;} }
+
+
+
+
+
+@media screen and (max-width: 1080px){
+.header-nav .header-nav-list:active {
+    transform: translate3d(-100%, 0, 0);
+}}
+
+
+.drawer-hidden{
+  display: none;
+}
+
+
+.drawer-open {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+.drawer-open span:before {
+  bottom: 8px;
+}
+
+.drawer-item {
+    margin-right: 45px;
+}
+
+@media screen and (max-width: 1080px){
+.drawer-item {
+    margin-right: 0;
+}}
+
+
+.drawer .drawer-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1080px){
+.drawer .drawer-item {
+    padding: 20px 0;
+}
+}
+
+
+@media screen and (max-width: 1080px){
+.drawer .drawer-item>span {
+   display: block;
+}
+}
+
+
+@media screen and (max-width: 1080px){
+.drawer .drawer-item :first-child {
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #fff;
+}}
+
+
+@media screen and (max-width: 1080px){
+.drawer .drawer-item :last-child {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #f79314;
+    letter-spacing: 2px;
+}}
+
+.drawer-list{
+    padding: 20px
+}
+
+@media screen and (min-width:1080px){
+    .drawer-open{
+        display: none;
+    }
+}
+
+
+
+/* 三本線のうち一番下の棒の位置調整 */
+.drawer-open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer-check:checked ~ .drawer-open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer-check:checked ~ .drawer-open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer-check:checked ~ .drawer-open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.drawer-content {
+    width: 100%;
+  height: 65%;
+  position: fixed;
+  top: 0;
+  left: 100%;/* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #fff;
+  transition: .5s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1080px){
+.drawer-content {
+    top: 60px;
+}}
+
+
+
+
+@media screen and (max-width: 767px){
+.drawer-content{
+    top: 52px;
+}}
+
+
+
+
+
+
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-check:checked ~ .drawer-content {
+  left: 0;/* メニューを画面に入れる */
+}
+
+
+/*header*/
+    
+    
+.header-button{
+    width: fit-content;
+}
+
+
+.header-button-list >last:child{
+    margin-left: -30px;
+}
+
+@media screen and (max-width:1080px){
+    .header-button-list >last:child {
+        margin-left: 0
+    }
+}
+
+@media screen and (max-width:1080px){
+    .header-button{
+        margin: 0 auto;
+        width:250px;
+    }
+}
+    
+    
+
+/*link button*/
+
+
+
+.link-button.menu {
+    font-size: 12px;
+    height: 40px;
+    padding:  0 10px;
+    
+}
+
+
+@media screen and (max-width: 1080px){
+.link-button.menu {
+    height: 60px;
+    font-size: 16px;
+}}
+
+
+.link-button.no-subtitle {
+    font-size: 16px;
+}
+
+
+.link-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #f79314;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+}
+
+.link-button--recruit {
+    margin-right: 0;
+    padding: 0 !important;
+    width: 104px;
+}
+
+.link-button:visited {
+    color: #fff;
+}
+
+.link-button>span:first-child {
+      letter-spacing: 4px;
+      line-height: 1.5;
+      font-family: 'Lato', sans-serif;
+    }
+
+.link-button>span:last-child {
+      font-size: 14px;
+}
+      @media screen and (max-width: 767px) {
+          .link-button>span:last-child {
+        font-size: 12px;}}
+/*main*/
+
+
+
+@media screen and (max-width: 1080px){
+main {
+    padding-top: 60px;
+}}
+
+@media screen and (max-width: 767px){
+main {
+    padding-top: 52px;
+}}
+
+
+
+/*FirstView*/
+
+
+.FirstView {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+
+
+
+@media screen and (max-width: 767px){
+.FirstView {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+}}
+
+
+
+
+.FirstView__main-image {
+    width: 100%;}
+    
+
+.FirstView__main-image--sp {
+    display: none;
+}
+
+
+@media screen and (max-width: 767px){
+.FirstView__main-image--sp {
+    display: block;
+}}
+
+
+/*FirstView__container*/
+
+
+@media screen and (max-width: 767px){
+.FirstView__container {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}}
+
+
+.FirstView__container {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 767px){
+.FirstView__container {
+    margin-top: -45vw;
+}}
+
+.FirstViewContent {
+    margin-bottom: 70px;
+    width: fit-content;}
+    
+@media screen and (max-width: 767px){
+.FirstViewContent {
+    margin-bottom: 20px;
+    width: 100%;
+}}
+
+/*FirstViewContent__title*/
+
+
+.FirstViewContent__title {
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+}}
+
+
+/*FirstViewContent__image*/
+
+.FirstViewContent__images {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}}
+
+.FirstViewContent__images img {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__images img {
+    width: 27.5%;
+}}
+
+.FirstViewContent__images img:nth-of-type(2) {
+    width: 40%;
+}
+
+FirstViewContent__images img:last-of-type {
+    margin-right: 0;
+}
+
+/*FirstViewButtons*/
+
+.FirstViewContent__buttons {
+    display: flex;
+}
+
+
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons {
+    flex-direction: column;
+}}
+
+.FirstViewContent__buttons a {
+    align-items: center;
+    background-color: #F79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 64px;
+}
+
+.FirstViewContent__buttons a:first-of-type {
+    margin-right: 15px;
+    width: 306px;
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons a {
+    font-size: 14px;
+    width: 100% !important;
+}}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons a:first-of-type {
+    margin-right: 0;
+    margin-bottom: 10px;
+}}
+
+@media screen and (min-width: 768px){
+.FirstViewContent__buttons a {
+    transition: opacity 0.2s;
+}}
+
+.FirstViewContent__buttons a:last-of-type {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    color: #333333;
+    width: 176px;
+}
+
+/*FirstViewCaptioin*/
+
+.FirstViewCaption {
+    color: #A2A2A4;
+    font-size: 12px;
+}
+
+.FirstViewCaption a {
+    color: #A2A2A4;
+}
+
+
+/*section2*/
+
+
+.main-section {
+    padding: 100px 0;
+}
+
+.main-section.top-about {
+    background-color: #f79314;
+    padding: 45px 0;
+}
+
+
+@media screen and (max-width: 767px){
+.main-section.top-about {
+    padding: 30px 0;
+}}
+
+/*content-width top-about-countent contents-tidy*/
+
+
+
+.top-about .contents-tidy1 {
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1024px){
+.top-about-content {
+    flex-direction: column;
+    
+}}
+
+
+.content-width {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+@media screen and (max-width: 767px){
+.content-width {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}}
+
+
+.about-text {
+    color: #fff;
+    width: 53%;
+}
+
+
+@media screen and (max-width: 1024px){
+.about-text {
+    width: 100%;
+}}
+
+@media screen and (max-width: 767px){
+.about-text {
+    width: 100%;
+}}
+
+
+.about-text h2>span{
+    display: inline;}
+    
+.about-text h2>span:last-child{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 767px){
+.about-text h2>span {
+    font-size: 30px;
+}}
+
+.about-text h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    display: inline-table;
+}
+
+
+.about-text p {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 15px;
+    line-height: 26px;
+}
+
+
+.top-about-button {
+    width: 320px;
+}
+
+@media screen and (max-width: 1024px){
+.top-about-button {
+    width: 100%;
+}}
+
+.about-text+.top-about-button {
+    width: 250px;
+}
+
+
+.link-button.inversion{
+    color: #f79314;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
